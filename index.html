@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            var temp = prompt("Hur varmt är det ute(°C)?: "), per = prompt("Är det nederbörd(ja/nej)?: "), clothes;
+            
+            if(temp < 0){
+               if(per == "ja"){
+                    clothes = "Vattentät vinterjacka, vinterkängor, evtl underställ samt skidbyxor";
+                }else{
+                    clothes = "Vinterjacka, varma skor, långbyxor eller liknande, evtl handskar, mössa mm";
+                }
+            }else if(temp < 10){
+               if(per == "ja"){
+                    clothes = "Regnställ, tjocktröja, vattentäta skor och långbyxor";
+                }else{
+                    clothes = "Tjock tröja och/eller jacka, långbyxor eller liknande";
+                }
+            }else if(temp < 20){
+               if(per == "ja"){
+                    clothes = "Tröja eller tshirt och tunna/luftiga byxor samt lätta regnkläder";
+                }else{
+                    clothes = "Tröja eller tshirt och shorts";
+                }
+            } else{
+               if(per == "ja"){
+                    clothes = "Vattentäta och luftiga ytterkläder, sen svalkande kläder under, tex shorts, t-shirt"
+                }else{
+                    clothes = "Luftiga kläder, tex. shorts/kjol och tshirt, linne osv"
+                }
+            }
+            
+            alert("Bra klädval för idag vore " + clothes)
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
