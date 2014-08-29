@@ -21,15 +21,19 @@
                 }else{
                     clothes = "Tröja eller tshirt och shorts";
                 }
-            } else{
+            }else if(temp ==420){
+                clothes = "#blazeit";
+                
+            }else{
                if(per == "ja"){
-                    clothes = "Vattentäta och luftiga ytterkläder, sen svalkande kläder under, tex shorts, t-shirt"
+                    clothes = "Vattentäta och luftiga ytterkläder, sen svalkande kläder under, tex shorts, t-shirt";
                 }else{
-                    clothes = "Luftiga kläder, tex. shorts/kjol och tshirt, linne osv"
+                    clothes = "Luftiga kläder, tex. shorts/kjol och tshirt, linne osv";
                 }
             }
             
-            alert("Bra klädval för idag vore " + clothes)
+            alert("Bra klädval för idag vore: " + clothes);
+            
         </script>
     </head>
     <body>
